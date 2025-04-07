@@ -56,44 +56,49 @@ const typingContainer = document.querySelector(".typing-container");
 const animationLink = document.querySelector(".animation-link"); 
 let firstHover = true; 
 
-typingContainer.addEventListener("mouseenter", function () {
-  if (firstHover) {
-    this.classList.add("first-hover");
-    firstHover = false;
-  } else {
-    this.classList.add("instant-show");
-  }
-});
+if (typingContainer) {
+  typingContainer.addEventListener("mouseenter", function () {
+    if (firstHover) {
+      this.classList.add("first-hover");
+      firstHover = false;
+    } else {
+      this.classList.add("instant-show");
+    }
+  });
 
-typingContainer.addEventListener("mouseleave", function () {
-  this.classList.remove("first-hover", "instant-show");
-});
+  typingContainer.addEventListener("mouseleave", function () {
+    this.classList.remove("first-hover", "instant-show");
+  });
+}
 
+if (animationLink && typingContainer) {
+  animationLink.addEventListener("mouseenter", function () {
+    typingContainer.classList.add("instant-show");
+  });
 
-animationLink.addEventListener("mouseenter", function () {
-  typingContainer.classList.add("instant-show");
-});
+  animationLink.addEventListener("mouseleave", function () {
+    typingContainer.classList.remove("instant-show");
+  });
+}
 
-animationLink.addEventListener("mouseleave", function () {
-  typingContainer.classList.remove("instant-show");
-});
 
 
 
 
 // Add Bg 
 
-document.querySelectorAll("div[src], section[src]").forEach(element => {
-  const bgPath = element.getAttribute("src"); 
+document.querySelectorAll("[data-bg]").forEach(element => {
+  const bgPath = element.getAttribute("data-bg");
 
   if (bgPath) {
     element.style.backgroundImage = `url('${bgPath}')`;
     element.style.backgroundSize = "cover";
     element.style.backgroundPosition = "center";
     element.style.backgroundRepeat = "no-repeat"; 
-    element.removeAttribute("src"); 
+    element.removeAttribute("data-bg");
   }
 });
+
 
 
 // Owl slider 
@@ -434,7 +439,11 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.4 });
 
-observer.observe(document.getElementById('testimonialSection'));
+const testimonialSection = document.getElementById('testimonialSection');
+if (testimonialSection) {
+  observer.observe(testimonialSection);
+}
+
 
 // Scroll bottom to top button
 
@@ -455,6 +464,28 @@ scrollBtn.addEventListener('click', () => {
   });
 });
 
+
+// Remove #id from url
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); 
+
+      const targetId = this.getAttribute("href").substring(1); 
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+
+       
+        history.replaceState(null, null, window.location.pathname);
+      }
+    });
+  });
+});
 
      
       
