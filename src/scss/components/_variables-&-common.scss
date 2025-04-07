@@ -1,0 +1,127 @@
+$white: #ffffff;
+$black: #000000;
+$black_1:#101010;
+$black_2:#1D1D1D;
+$black_3:#0E0E0E;
+$black_4: #353535;
+$black_5: #3A3A3A;
+$black_6: #2E2E2E;
+$blue: #0033FF;
+
+
+
+
+
+
+
+// Fonts 
+
+$font: 'Nohemi';
+$font-2: "Poppins", sans-serif;
+
+
+// Thin variant
+@font-face {
+    font-family: 'Nohemi';
+    src: url('fonts/Nohemi-Thin-BF6438cc577ef3b.otf') format('opentype');
+    src: url('fonts/Nohemi-Thin-BF6438cc57e2011.woff') format('woff');
+    src: url('fonts/Nohemi-Thin-BF6438cc5896c67.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+// ExtraLight variant
+@font-face {
+    font-family: 'Nohemi';
+    src: url('fonts/Nohemi-ExtraLight-BF6438cc57e06d5.otf') format('opentype');
+    src: url('fonts/Nohemi-ExtraLight-BF6438cc58a2634.ttf') format('truetype');
+    src: url('fonts/Nohemi-ExtraLight-BF6438cc581502c.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+  // Light variant
+@font-face {
+    font-family: 'Nohemi';
+    src: url('fonts/Nohemi-Light-BF6438cc583f70b.otf') format('opentype');
+    src: url('fonts/Nohemi-Light-BF6438cc5702321.woff') format('woff');
+    src: url('fonts/Nohemi-Light-BF6438cc5899919.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+  // Medium variant
+  @font-face {
+    font-family: 'Nohemi';
+    src: url('fonts/Nohemi-Medium-BF6438cc581a509.otf') format('opentype');
+    src: url('fonts/Nohemi-Medium-BF6438cc57ddecd.woff') format('woff');
+    src: url('fonts/Nohemi-Medium-BF6438cc5883899.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  // Medium variant
+  @font-face {
+    font-family: 'Nohemi';
+    src: url('fonts/Nohemi-Regular-BF6438cc58b98fc.otf') format('opentype');
+    src: url('fonts/Nohemi-Regular-BF6438cc579d934.woff') format('woff');
+    src: url('fonts/Nohemi-Regular-BF6438cc4d0e493.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+
+    // Semi Bold variant
+    @font-face {
+        font-family: 'Nohemi';
+        src: url('fonts/Nohemi-SemiBold-BF6438cc588b5e5.otf') format('opentype');
+        src: url('fonts/Nohemi-SemiBold-BF6438cc57db2ff.woff') format('woff');
+        src: url('fonts/Nohemi-SemiBold-BF6438cc588a48a.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+      }
+
+
+    
+
+  
+  // Black variant
+  @font-face {
+    font-family: 'Nohemi';
+    src: url('fonts/Nohemi-Black-BF6438cc565e67b.woff') format('woff'),
+         url('fonts/Nohemi-Black-BF6438cc5874bd2.otf') format('opentype'),
+         url('fonts/Nohemi-Black-BF6438cc58744d4.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  // Bold variant
+  @font-face {
+    font-family: 'Nohemi';
+    src: url('fonts/Nohemi-Bold-BF6438cc577b524.woff') format('woff'),
+         url('fonts/Nohemi-Bold-BF6438cc587b5b5.ttf') format('truetype'),
+         url('fonts/Nohemi-Bold-BF6438cc5812315.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  // ExtraBold variant
+  @font-face {
+    font-family: 'Nohemi';
+    src: url('fonts/Nohemi-ExtraBold-BF6438cc5761ae2.woff') format('woff'),
+         url('fonts/Nohemi-ExtraBold-BF6438cc5881baf.ttf') format('truetype'),
+         url('fonts/Nohemi-ExtraBold-BF6438cc58a4c3c.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+
+  @font-face {
+    font-family: "Poppins", sans-serif;
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
