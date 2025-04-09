@@ -472,20 +472,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   links.forEach(link => {
     link.addEventListener("click", function (e) {
-      e.preventDefault(); 
+      const href = this.getAttribute("href");
 
-      const targetId = this.getAttribute("href").substring(1); 
-      const targetElement = document.getElementById(targetId);
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
 
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
 
-       
-        history.replaceState(null, null, window.location.pathname);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+
+          history.replaceState(null, null, window.location.pathname);
+        }
       }
     });
   });
 });
+
 
      
       
