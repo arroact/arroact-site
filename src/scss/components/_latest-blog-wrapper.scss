@@ -1,0 +1,107 @@
+.latest-blog-wrapper{
+    max-width: 1200px;
+    margin: 50px auto 100px auto;
+
+    @media (max-width:991px) {
+       display: none;
+    }
+
+
+    .blog__item{
+        display: flex;
+        gap: 50px;
+        margin: 50px auto 100px auto;
+        align-items: center;
+
+        .blog__item__img{
+            min-width: 560px;
+            position: relative;
+            max-height: 360px;
+            border-radius: 30px;
+
+            @media (max-width:1200px) {
+                min-width: 500px;
+                max-height: 100%;
+            }
+
+            @media (max-width:1100px) {
+                min-width: 45%;
+                max-height: 100%;
+            }
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 30px;
+                max-height: 360px;
+            }
+
+            span{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                padding: 14px 20px;
+                border: 1px solid $blue;
+                border-radius: 10px;
+                background-color: $black_3;
+                font-size: 14px;
+                font-weight: 300;
+                color: $white;
+                font-family: $font;
+            }
+        }
+
+        .d-flex{
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: $white;
+            margin-bottom: 20px;
+            font-family: $font;
+            letter-spacing: 0.03em;
+            align-items: center;
+            opacity: 0.6;
+
+            .tag{
+                background-color: $blue;
+                border-radius: 20px;
+                padding: 5px 15px;
+                color: $white;
+                font-family: $font;
+                text-transform: uppercase;
+                letter-spacing: 0.03em;
+            }
+
+            span:first-child{
+                padding-right: 10px;
+            }
+
+            span:last-child{
+                padding-left: 10px;
+            }
+        }
+
+        color: $white;
+
+        h4{
+            margin-top: 30px;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 25px;
+            opacity: 0.6;
+            font-weight: 300;
+            font-family: $font;
+            margin-top: 35px;
+        }
+
+        .light-link{
+            font-size: 20px;
+            font-family: $font;
+            font-weight: 300;
+            margin-top: 35px;
+            display: inline-block;
+        }
+    }
+}
