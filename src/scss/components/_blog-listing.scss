@@ -41,6 +41,38 @@
             }
         }
     }
+
+    &.version-2{
+        .title-block{
+            .title_2{
+                @media (max-width: 991px) {
+                    margin: 40px auto;
+                }
+
+                img{
+                    position: absolute;
+                    left: -55px;
+                    top: -8px;
+
+                    @media (max-width: 1300px) {
+                        max-width: 280px;
+                        left: -45px;
+                    }
+
+                    @media (max-width: 1200px) {
+                        max-width: 230px;
+                        left: -35px;
+                    }
+
+                    @media (max-width: 991px) {
+                        max-width: 160px;
+                        left: -25px;
+                        top: -5px;                
+                    }
+                }
+            }
+        }
+    }
 }
 
 .blogs-listing__items{

@@ -14,6 +14,9 @@
 @import "components/vision-mission-wrapper";
 @import "components/latest-blog-wrapper";
 @import "components/blog-category-wrappper";
+@import "components/blog-detail-content";
+@import "components/contact-us";
+@import "components/faq-wrapper";
 
 
 
@@ -369,5 +372,15 @@ textarea::-ms-input-placeholder {
 
   &:hover{
     background: $blue;
+  }
+}
+
+
+.top-gap{
+  margin-top: -220px;
+  position: relative;
+
+  @media (max-width: 991px) {
+    margin-top: -190px;
   }
 }

@@ -1,6 +1,12 @@
 .blog-category-wrappper{
     margin: 100px auto;
     max-width: 1200px;
+    position: relative;
+
+    @media (max-width:991px) {
+        margin: 20px auto;
+        margin-top: -100px;
+    }
 
     h5{
         margin-bottom: 25px;
@@ -12,6 +18,10 @@
         gap: 20px;
         flex-wrap: wrap;
 
+        @media (max-width:767px) {
+            gap: 15px;
+        }
+
         .nav-link{
             border: 1px solid $white;
             font-size: 18px;
@@ -22,6 +32,12 @@
             border-radius: 50px;
             padding: 10px 20px;
             text-transform: capitalize;
+
+            @media (max-width:767px) {
+                font-size: 15px;
+                line-height: 20px;
+                padding: 10px 15px;
+            }
 
             &.active{
                 background-color: $blue;
@@ -50,7 +66,8 @@
     
         @media (max-width:575px) {
             grid-template-columns: repeat(1, 1fr);
-            
+            margin-top: 70px;
+            gap: 70px;
         }
     
     
@@ -125,6 +142,96 @@
     
             p{
                 opacity: 0.6;
+            }
+        }
+    }
+
+    .pagination{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media (max-width:767px) {
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        &-counts{
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+
+            @media (max-width:767px) {
+                order: 1;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: 300;
+                font-family: $font;
+                color: $white;
+                text-decoration: none;
+
+                &.active{
+                    background-color: $blue;
+                }
+            }
+        }
+
+        button{
+            height: 44px;
+            border-radius: 10px;
+            border: 1px solid $blue;
+            padding: 17px 20px;
+            background-color: transparent;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $font;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+
+            
+
+            @media (max-width:767px) {
+                width: auto;
+            }
+
+            &[disabled]{
+                border-color: $black_5;
+                color: $black_5;
+            }
+
+            &.pagination-prev{
+                img{
+                    margin-right: 25px;
+                }
+
+                @media (max-width:767px) {
+                    order: 2;
+                }    
+            }
+
+            &.pagination-next{
+                img{
+                    margin-left: 25px;
+                }
+
+                @media (max-width:767px) {
+                    order: 3;
+                } 
             }
         }
     }
