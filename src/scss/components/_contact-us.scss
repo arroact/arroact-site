@@ -1,0 +1,295 @@
+.contactus-form{
+    position: relative;
+    margin: -150px auto 50px !important;
+
+    h3{
+        margin-bottom: 0;
+
+        @media (max-width:1200px) {
+            margin: 40px 0;
+        }
+
+        @media (max-width:767px) {
+            margin: 0 0 70px 0;
+        }
+    }
+
+    .container{
+        @media (max-width:1200px) {
+            max-width: 100%;
+        }
+    }
+
+    .flex-head{
+        justify-content: space-between;
+
+        @media (max-width:1200px) {
+            gap: 40px;
+            justify-content: normal;
+        }
+
+        @media (max-width:767px) {
+            display: block !important;
+        }
+    }
+
+    .contactus-form__items, 
+    .contactus-form__form{
+        min-width: calc(50% - 110px);
+        gap: 110px;
+
+        @media (max-width:1200px) {
+            width: calc(50% - 20px);
+        }
+
+        @media (max-width:767px) {
+            width: 100%;
+        }
+    }
+
+    &__content{
+        border-radius: 40px;
+        padding: 80px 0;
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+
+        @media (max-width:1200px) {
+            padding: 50px 25px;
+            border-radius: 20px;
+        }
+
+        @media (max-width:767px) {
+            padding: 30px 30px 380px 30px;
+            position: relative;
+        }
+
+        @media (max-width:575px) {
+            padding: 30px 15px 450px;
+            position: relative;
+        }
+    }
+
+    &__items{
+        .flex-1{
+            gap: 73px;
+
+            @media (max-width:1200px) {
+                display: block !important;
+                gap: 0;
+            }
+
+            .col-1{
+                width: 112px;
+
+                @media (max-width:1200px) {
+                    min-width: 100%;
+                }
+            }
+
+            .col-2{
+                min-width: 465px;
+
+                @media (max-width:1200px) {
+                    min-width: 100%;
+                }
+            }
+        }
+    }  
+    
+    &__address{
+        padding: 30px 0;
+        margin: 35px 0 0;
+        border-top: 1px solid lch(100 0 0 / 0.3);
+        border-bottom: 1px solid lch(100 0 0 / 0.3);
+        min-width: fit-content;
+
+        @media (max-width:1200px) {
+            margin: 80px 0 0 0;
+        }
+
+        @media (max-width:991px) {
+            margin: 40px 0 0 0;
+        }
+
+        @media (max-width:767px) {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            width: 100%;
+            min-width: auto;
+            max-width: calc(100% - 60px);
+        }
+
+        @media (max-width:575px) {
+            max-width: calc(100% - 30px);
+            left: 15px;
+        }
+        
+        p{
+            margin-bottom: 0;
+        }
+
+        .flex-2{
+            gap: 15px;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+            max-width: 82%;
+            margin-bottom: 30px;
+
+            p.small-text{
+                margin-top: 0;
+            }
+
+            @media (max-width:767px) {
+                max-width: 100%;
+            }
+        }
+
+        .flex-3{
+            gap: 10px;
+            margin-top: 10px;
+
+            img{
+                width: 23px;
+            }
+
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 20px;
+                font-family: $font;
+                color: $white;
+            }
+        }
+
+        p.small-text{
+            margin-top: 47px;
+
+            @media (max-width:767px) {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            @media (max-width:575px) {
+                -webkit-line-clamp: 4;
+            }
+        }
+    }
+
+    &__form{
+        h6{
+            margin-bottom: 15px;
+        }
+
+        p{
+            margin-bottom: 30px;
+            opacity: 0.6;
+        }
+
+        .form-control{
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            font-family: $font;
+            letter-spacing: 0.03em;
+            padding: 20px;
+            min-height: 50px;
+            margin-bottom: 20px;
+            background-color: $black_4;
+            border: 0;
+            outline: none;
+            box-shadow: none;
+            color: $white;
+
+            @media (max-width:767px) {
+                padding: 15px;
+            }
+        }
+
+        textarea.form-control{
+            min-height: 160px;
+        }
+
+        .btn-blue{
+            margin-top: 5px;
+        }
+    }
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-textanimated {
+        padding: 40px 0;
+        font-size: 160px;
+        font-family: $font-2;
+        color: $white;
+        font-weight: 400;
+        white-space: nowrap;
+        display: inline-block;
+        animation: marqueeAnimation 10s linear infinite;
+
+        @media (max-width:1200px) {
+            font-size: 130px;
+        }
+
+        @media (max-width:767px) {
+            font-size: 75px;
+            padding: 20px 280px;
+        }
+    }
+
+    @keyframes marqueeAnimation {
+        0% {
+            transform: translateX(20%);
+        }
+        25% {
+            transform: translateX(-25%);
+        }
+        35% {
+            transform: translateX(-20%);
+        }
+        60% {
+            transform: translateX(20%);
+        }
+        70% {
+            transform: translateX(20%); 
+        }
+        100% {
+            transform: translateX(20%);
+        }
+    }
+}
+
+.contact-us-map{
+    text-align: center;
+    position: relative;
+    z-index: 5;
+
+    iframe {
+        filter: invert(90%) hue-rotate(180deg);
+        max-width: calc(100% - 20px);
+        min-height: 559px;
+        margin: 0 auto;
+        border-radius: 30px;
+
+        @media (max-width:1200px) {
+            min-height: 450px;
+        }
+
+        @media (max-width:991px) {
+            min-height: 350px;
+        }
+
+        @media (max-width:767px) {
+            min-height: 250px;
+        }
+      }
+}

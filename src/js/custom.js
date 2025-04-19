@@ -490,6 +490,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Accordion active 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const accordion = document.getElementById("accordionFlushExample");
+
+  accordion.addEventListener("shown.bs.collapse", function (event) {
+    const item = event.target.closest(".accordion-item");
+    item.classList.add("active");
+  });
+
+  accordion.addEventListener("hidden.bs.collapse", function (event) {
+    const item = event.target.closest(".accordion-item");
+    item.classList.remove("active");
+  });
+
+  accordion.querySelectorAll(".accordion-collapse.show").forEach(collapse => {
+    const item = collapse.closest(".accordion-item");
+    item.classList.add("active");
+  });
+});
+
 
      
       

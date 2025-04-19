@@ -1,0 +1,128 @@
+.faq-wrapper{
+    margin: 100px auto;
+    padding: 0 120px 0 50px;
+    max-width: 1440px;
+    position: relative;
+
+    @media (max-width:1200px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width:991px) {
+        padding: 0 20px;
+        margin: 70px auto;
+    }
+
+    .d-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        position: relative;
+
+        @media (max-width:767px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 53px;
+        }
+
+        .col-1, .col-2{
+            width: 100%;
+        }
+    }
+
+    .d-flex{
+        gap: 135px;
+
+        h3{
+            margin-top: 0;
+        }
+
+        @media (max-width:1200px) {
+            gap: 80px;
+        }
+
+        @media (max-width:767px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    .accordion{
+        .accordion-item{
+            padding: 20px;
+            background-color: $black_2;
+            border: 1px solid lch(100 0 0 / 0.3);
+            border-radius: 25px;
+
+            &:not(:first-child){
+                margin-top: 20px;
+            }
+
+            &.active{
+                border-color: $blue;
+
+                .accordion-button{
+                    img{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .accordion-button{
+            padding: 0;
+            background-color: transparent;
+            position: relative;
+            padding-right: 15px;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 700;
+            font-family: $font;
+            color: $white;
+            border: 0;
+            outline: none;
+            box-shadow: none;
+
+            @media (max-width:1200px) {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            img{
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
+
+            &::after{
+                display: none;
+            }
+        }
+
+        .accordion-body{
+            padding: 0;
+            font-size: 15px;
+            line-height: 22px;
+            color: $white;
+            font-weight: 300;
+            font-family: $font;
+            margin-top: 37px;
+
+            @media (max-width:1200px) {
+                margin-top: 25px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__bgsvg{
+        position: absolute;
+        top: -480px;
+        left: -50px;
+
+        @media (max-width:991px) {
+            display: none;
+        }
+    }
+}
