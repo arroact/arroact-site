@@ -22,7 +22,7 @@
             height: 700px;
         }
 
-        @media (max-width:767px) {
+        @media (max-width:991px) {
             border-radius: 20px;
         }
     }
@@ -307,7 +307,7 @@
             position: relative;
             z-index: 7;
 
-            @media (max-width: 767px) {
+            @media (max-width: 991px) {
                 border-radius: 20px;
             }
         }
@@ -315,6 +315,25 @@
         .hero-wrapper__content{
             max-height: 100%;
             max-width: 1085px;
+
+            &.justify-content-end{
+                padding-bottom: 40px;
+                align-items: flex-start;
+
+                h1,p{
+                    text-align: left;
+                    max-width: 100%;
+
+
+                    @media (max-width:991px) {
+                        text-align: center;
+                    }
+                }
+
+                p{
+                    margin-bottom: 0;
+                }
+            }
 
             @media (max-width: 1200px) {
                 max-width: 95%;
