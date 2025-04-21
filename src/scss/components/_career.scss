@@ -1,0 +1,121 @@
+.career-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &.top-gap{
+        margin-top: -170px;
+    }
+
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+
+        p{
+            font-size: 18px;
+            font-weight: 200;
+            font-family: $font;
+            line-height: 35px;
+            margin-bottom: 0;
+            color: $white;
+        }
+    }
+
+    .career-process{
+        margin-top: 80px;
+        
+        .d-grid{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 200px 500px;
+            max-width: 1070px;
+            margin: 0 auto;
+
+            img{
+                margin-bottom: 30px;
+                display: block;
+            }
+
+            h5{
+                margin-bottom: 20px;
+            }
+
+            p{
+                margin-bottom: 0;
+                font-size: 18px;
+                line-height: 30px;
+                color: $white;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .job-list{
+        margin: 200px auto;
+
+        &__item{
+            padding-bottom: 50px;
+            border-bottom: 1px solid hsl(0deg 0% 100% / 30%);
+            position: relative;
+
+            &:not(:first-child){
+                margin-top: 50px;
+            }
+
+            a{
+                text-decoration: none;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            h4{
+                margin-bottom: 30px;
+                padding-right: 80px;
+
+                span{
+                    display: inline-block;
+                    margin-left: 30px;
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    font-family: $font;
+                    padding: 10px 20px;
+                    border: 1px solid $white;
+                    border-radius: 50px;
+                }
+            }
+
+            p{
+                font-size: 22px;
+                font-family: $font;
+                font-weight: 300;
+                color: $white;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.gallery-wrapper{
+    margin: 150px auto;
+
+    .gallery-content{
+        max-width: 1080px;
+        text-align: center;
+        margin: 0 auto;
+
+        h3{
+            margin-bottom: 30px;
+        }
+
+        p{
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: 200;
+            font-family: $font;
+            line-height: 35px;
+            color: $white;
+        }
+    }
+}

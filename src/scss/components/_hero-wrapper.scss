@@ -274,6 +274,26 @@
     &.version-1{
         padding: 10px;
 
+        @media (max-width: 767px) {
+            padding: 5px;
+        }
+
+        .hero-wrapper__content.grid-layout{
+            max-width: 1250px;
+            width: 100%;
+
+            .d-grid{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 70px;
+                min-width: 1200px;
+                align-items: center;
+
+                p{
+                    margin-top: 0;
+                }
+            }
+        }
+
         
 
     &.w-full{
@@ -283,10 +303,6 @@
             padding-bottom: 170px;
         }
     }
-
-        @media (max-width: 767px) {
-            padding: 5px;
-        }
 
         .hero-wrapper__content{
             position: inherit;
