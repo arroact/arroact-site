@@ -327,6 +327,10 @@ footer{
                     h4{
                         line-height: 55px;
 
+                        @media (max-width:1000px) {
+                            line-height: 45px;
+                        }
+
                         @media (max-width:767px) {
                             margin-bottom: 70px;
                             line-height: 45px;
