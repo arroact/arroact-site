@@ -285,11 +285,33 @@
             .d-grid{
                 grid-template-columns: repeat(2, 1fr);
                 gap: 70px;
-                min-width: 1200px;
                 align-items: center;
+
+                @media (min-width:1300px) {
+                    min-width: 1200px;
+                }
+
+                @media (max-width:1300px) {
+                    gap: 30px;
+                }
+
+                @media (max-width:767px) {
+                    display: block !important;
+                    text-align: center;
+                }
 
                 p{
                     margin-top: 0;
+
+                    @media (max-width: 1200px) {
+                        -webkit-line-clamp: 5;
+                        text-align: left;
+                    }
+
+                    @media (max-width: 767px) {
+                        text-align: center;
+                        margin-top: 30px;
+                    }
                 }
             }
         }
@@ -335,6 +357,10 @@
             &.justify-content-end{
                 padding-bottom: 40px;
                 align-items: flex-start;
+
+                @media (max-width: 767px) {
+                    padding-bottom: 25px;
+                }
 
                 h1,p{
                     text-align: left;
