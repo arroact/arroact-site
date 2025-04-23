@@ -511,6 +511,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Gallery
+
+function toggleSliderAnimation() {
+  const wrapper = document.querySelector('.image-slider-wrapper');
+  const slider = document.querySelector('.image-slider');
+
+  if (!wrapper || !slider) return;
+
+  const wrapperWidth = wrapper.offsetWidth;
+  const sliderWidth = slider.scrollWidth;
+
+  if (sliderWidth > wrapperWidth) {
+    slider.classList.add('animate');
+  } else {
+    slider.classList.remove('animate');
+  }
+}
+
+// Run on load and resize
+window.addEventListener('load', toggleSliderAnimation);
+window.addEventListener('resize', toggleSliderAnimation);
+
+
 
      
       
