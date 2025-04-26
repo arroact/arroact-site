@@ -4095,6 +4095,76 @@ footer .footer-main .footer-links__2 .links {
   }
 }
 
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.content-wrapper__bg {
+  background: linear-gradient(178.04deg, #0033FF -5.24%, #101010 98.35%);
+  padding-top: 190px;
+}
+@media (max-width: 991px) {
+  .content-wrapper__bg {
+    padding-top: 150px;
+  }
+}
+.content-wrapper__bg h3:first-child {
+  padding-top: 0;
+}
+.content-wrapper .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  .content-wrapper .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+.content-wrapper h3 {
+  padding-top: 100px;
+}
+@media (max-width: 991px) {
+  .content-wrapper h3 {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .content-wrapper h3 {
+    padding-top: 50px;
+  }
+}
+.content-wrapper p, .content-wrapper li {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 40px;
+  color: #ffffff;
+  font-family: "Nohemi";
+}
+.content-wrapper p:not(:first-child), .content-wrapper li:not(:first-child) {
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .content-wrapper p:not(:first-child), .content-wrapper li:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .content-wrapper p, .content-wrapper li {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+.content-wrapper ul, .content-wrapper ol {
+  margin-top: 50px;
+  padding-left: 15px;
+}
+@media (max-width: 767px) {
+  .content-wrapper ul, .content-wrapper ol {
+    margin-top: 30px;
+  }
+}
+
 body {
   font-family: "Nohemi";
   overflow-x: hidden;
