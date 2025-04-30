@@ -316,6 +316,46 @@
             }
         }
 
+        .d-flex{
+            gap: 30px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: end;
+
+            .col-1{
+                width: 70%;
+                text-align: left;
+
+                a{
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: $white;
+                    text-decoration: none;
+                    display: block;
+                    margin-bottom: 42px;
+
+                    img{
+                        margin-right: 15px;
+                    }
+                }
+
+                .disc{
+                    font-size: 25px;
+                    font-weight: 300;
+                    font-family: $font;
+                    color: $white;
+                    margin-top: 25px;
+                }
+            }
+
+            .col-2{
+                width: 20%;
+                text-align: right;
+                justify-content: end;
+                display: flex;
+            }
+        }
+
         
 
     &.w-full{
