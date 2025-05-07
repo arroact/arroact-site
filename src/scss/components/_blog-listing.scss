@@ -1,5 +1,9 @@
 .blogs-listing-wrapper{
-    padding: 100px 0 20px 0;
+    margin: 100px auto 20px auto;
+
+    @media (max-width:991px) {
+        margin: 70px auto 20px auto;
+    }
 
     .title-block{
         margin-bottom: 100px;
