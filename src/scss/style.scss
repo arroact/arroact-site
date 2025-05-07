@@ -21,12 +21,18 @@
 @import "components/career";
 @import "components/gallery";
 @import "components/content-wrapper";
+@import "components/service-detail-wrapper";
 
 
 
 body{
     font-family: $font;
     overflow-x: hidden;
+}
+
+main{
+  position: relative;
+  z-index: 2;
 }
 
 

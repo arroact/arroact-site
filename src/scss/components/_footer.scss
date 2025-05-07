@@ -70,6 +70,10 @@ footer{
             max-width: calc(100% - 20px);
             margin: 0 auto;
 
+            @media (max-width:1350px) {
+               padding: 80px 20px;
+            }
+
             @media (max-width:1200px) {
                 padding: 50px 25px;
                 border-radius: 20px;
@@ -199,6 +203,7 @@ footer{
         &__form{
             h6{
                 margin-bottom: 15px;
+                font-weight: 500;
             }
     
             p{
@@ -213,7 +218,7 @@ footer{
                 font-family: $font;
                 letter-spacing: 0.03em;
                 padding: 20px;
-                min-height: 50px;
+                height: 50px;
                 margin-bottom: 20px;
                 background-color: $black_4;
                 border: 0;
@@ -411,6 +416,39 @@ footer{
                     .btn-blue{
                         width: 100%;
                     }
+                }
+            }
+        }
+
+        
+
+        &.version-3{
+            h3{
+                @media (max-width:1200px) {
+                    margin: 0 0 20px 0;
+                }
+
+                @media (max-width:767px) {
+                    margin: 0 0 50px 0;
+                }
+            }
+
+            .footer-contact__content{
+                @media (max-width: 767px) {
+                    padding: 30px 15px 300px;
+                }
+            }
+
+            .form-img{
+                @media (max-width: 767px) {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 15px;
+                    max-width: calc(100% - 30px);
+                    height: 240px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
                 }
             }
         }
