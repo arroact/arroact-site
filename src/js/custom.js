@@ -103,9 +103,6 @@ document.querySelectorAll("[data-bg]").forEach(element => {
   }
 });
 
-
-
-
 // Owl slider 
 
 $(document).ready(function(){
@@ -537,6 +534,41 @@ function toggleSliderAnimation() {
 // Run on load and resize
 window.addEventListener('load', toggleSliderAnimation);
 window.addEventListener('resize', toggleSliderAnimation);
+
+
+// Service Detail Steps 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const stepsContainer = document.querySelector('.development-process-wrapper__steps');
+  const steps = document.querySelectorAll('.development-process-wrapper__steps .step');
+  let animationStarted = false;
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 && 
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
+
+  function startStepAnimation() {
+    steps.forEach((step, index) => {
+      if (isInViewport(step) && !step.classList.contains('step-active')) {
+        setTimeout(() => {
+          step.classList.add('step-active');
+        }, 1000 * index); // Delay based on the index (1 second per step)
+      }
+    });
+  }
+
+  function handleScroll() {
+    startStepAnimation();
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll();  // Trigger the check on load
+});
+
 
 
 

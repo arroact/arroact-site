@@ -61,21 +61,26 @@
         &-list{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px 100px;
+            gap: 40px 100px;
             margin-top: 50px;
             grid-auto-flow: dense; 
 
             @media (max-width:767px) {
                 display: block;
                 margin-top: 40px;
+                gap: 30px;
             }
 
             p{
                 margin-bottom: 0;
                 position: relative;
                 padding-left: 40px;
+                font-size: 22px;
+                line-height: 25px;
 
                 @media (max-width:767px) {
+                    font-size: 18px;
+
                     &:not(:first-child){
                         margin-top: 30px;
                     }

@@ -271,7 +271,7 @@
         }
     } 
 
-    &.version-1, &.version-2{
+    &.version-1, &.version-2, &.version-3{
         padding: 10px;
 
         @media (max-width: 767px) {
@@ -590,4 +590,25 @@
       }  
     }
 
+    &.version-3{
+        .hero-wrapper__content{
+            &.content-width{
+                h1{
+                    max-width: 80%;
+
+                    @media (max-width: 991px) {
+                        max-width: 100%;
+                    }
+                }
+
+                p{
+                    max-width: 60%;
+
+                    @media (max-width: 991px) {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }

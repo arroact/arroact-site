@@ -69,6 +69,8 @@ footer{
             padding: 80px 0;
             max-width: calc(100% - 20px);
             margin: 0 auto;
+            position: relative;
+            z-index: 3;
 
             @media (max-width:1350px) {
                padding: 80px 20px;
