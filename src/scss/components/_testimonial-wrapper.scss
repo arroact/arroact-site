@@ -2,8 +2,9 @@
     padding: 100px 0 20px 0;
     position: relative;
 
-    @media (max-width:767px) {
-        padding: 70px 0 20px 0;
+    @media (max-width:991px) {
+        padding: 0;
+        margin: 70px auto !important;
     }
 
     &__bgsvg{
@@ -51,7 +52,7 @@
         }
 
         @media (max-width:575px) {
-            padding-top: 240px;
+            padding-top: 190px;
         }
           
     }
@@ -167,7 +168,7 @@
             }
 
             @media (max-width:575px) {
-                height: 200px;
+                height: 152px;
             }
 
             .small-title{
@@ -191,10 +192,6 @@
 
                 @media (max-width:767px) {
                     -webkit-line-clamp: 2;
-                }
-
-                @media (max-width:575px) {
-                    -webkit-line-clamp: 3;
                 }
             }
         }
@@ -255,6 +252,10 @@
             animation: none;
         }
 
+        @media (max-width:380px) {
+            font-size: 15px;
+        }
+
         
           @keyframes fadeUp {
             0% {
@@ -276,6 +277,10 @@
             font-size: 12px;
             font-weight: 400px;
             opacity: .6;
+
+            @media (max-width:575px) {
+                margin-left: 15px;
+            }
         }
     }
 

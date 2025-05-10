@@ -96,15 +96,17 @@
         </header>
 
         <main>
-            <div class="hero-wrapper version-1 w-full">
-                <div data-bg="/src/images/adobe-experience-manager-technology-bg.png" class="hero-wrapper__bg">
+            <div class="hero-wrapper version-2 w-full">
+                <div data-bg="/src/images/adobe-experience-manager-technology-bg.png" 
+                data-bg-mobile="/src/images/adobe-experience-manager-technology-bg-mobile.png"
+                class="hero-wrapper__bg">
                     <div class="hero-wrapper__content justify-content-end content-width">
                         <h1 class="title_2">Adobe Experience
                             Manager</h1>
 
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s  standard dummy text ever since the 1500s.</p>
 
-                        <a href="#" class="btn btn-blue">Talk to the Expert</a>
+                        <a href="#contact-us" class="btn btn-blue">Talk to the Expert</a>
                     </div>
                 </div>    
               </div>
@@ -121,19 +123,19 @@
                     <div class="item">
                         <h3>AEM Development Services</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s  standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-blue">Talk to the Expert</a>
+                        <a href="#contact-us" class="btn btn-blue">Talk to the Expert</a>
                     </div>
 
                     <div class="item">
                         <h3>AEM Managed Services</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s  standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-blue">Talk to the Expert</a>
+                        <a href="#contact-us" class="btn btn-blue">Talk to the Expert</a>
                     </div>
 
                     <div class="item bg-blue">
                         <h3>Hire Adobe Experience Manager Developer</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s  standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-light">Talk to the Expert</a>
+                        <a href="#contact-us" class="btn btn-light">Talk to the Expert</a>
                     </div>
                 </div>
 
@@ -162,7 +164,10 @@
                 </div>
             </div>
 
-            <div class="cta-wrapper" data-bg="/src/images/cta-bg.png">
+            <div class="cta-wrapper"
+              data-bg="/src/images/cta-bg.png"
+              data-bg-mobile="/src/images/cta-bg-mobile.png"
+            >
                 <div class="container">
                     <h3>
                         Want to discuss something?
@@ -170,9 +175,9 @@
 
                     <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
-                    <a href="#" class="btn btn-blue">Contact Us</a>
+                    <a href="#contact-us" class="btn btn-blue">Contact Us</a>
                 </div>
-            </div> 
+              </div> 
 
             <div class="why-choose-wrapper">
                 <div class="why-choose-wrapper__bgsvg">
@@ -447,192 +452,157 @@
         
         </main>    
 
-      <footer>
-        <div class="footer-contact version-3">
-          <div class="footer-contact__content" data-bg="src/images/rect-bg-dark.png"  id="contact-us">
-            <div class="container">
-              <div class="d-flex flex-head">
-                <div class="col-1 footer-contact__items">
-                    <h3 class="title_3">
-                        Begin your journey with us!
-                    </h3>
-
-                    <img src="src/images/career-form-img.png" alt="career-form-img" class="form-img">
-                </div>
-  
-                <div class="col-2 footer-contact__form">
-                  <h6>Ready to start?</h6>
-                  <p class="small-text">If you are passionate and skilled, we’ll get along very well :)</p>
-  
-                  <form>
-                    <input type="text" class="form-control" placeholder="Full Name">
-                    <input type="email" class="form-control" placeholder="Email ID">
-                    <input type="number" class="form-control" placeholder="Contact Number">
-
-                    <div class="upload-box" id="drop-area">
-                        <div class="icon">
-                            <img src="src/images/attach-file-icon.png" alt="attach-file-icon">
+        <footer>
+          <div class="footer-contact">
+              <div class="footer-contact__content" data-bg="src/images/rect-bg-dark.png"  id="contact-us">
+                <div class="container">
+                  <div class="d-flex flex-head">
+                    <div class="col-1 footer-contact__items">
+                      <div class="d-flex flex-1">
+                        <div class="col-1">
+                          <div class="small-title">Contact Us</div>
                         </div>
-                        <p>Drag & Drop your file here <br/>
-                            PDF or Word files with less than 10MB in size are supported.</p>
-                        <button type="button" class="choose-btn" id="file-btn">Choose File</button>
-                        <input type="file" id="file-input" accept=".pdf,.doc,.docx">
-                        <p id="file-name"></p>
+          
+                        <div class="col-2">
+                          <h3 class="title_3">
+                            Let’s get things started.
+                          </h3>
+                        </div>
+                      </div>
+        
+                      <div class="footer-contact__address">
+                        <h6>Our Office</h6>
+        
+                        <div class="d-flex flex-2">
+                            <img src="src/images/Flag_of_India.png" alt="Flag_of_India">
+        
+                            <p class="small-text">J/37,Sarvoday Nagar Part -1, Opp.Kalupur Commercial Bank Sola Road, Ahmedabad, Gujarat 380061, India</p>
+                        </div>
+        
+                        <div class="d-flex flex-3">
+                          <img src="src/images/email-icon.png" alt="email-icon">
+        
+                          <a href="mailto: info@arroact.com">info@arroact.com</a>
+                        </div>
+        
+        
+                        <div class="d-flex flex-3">
+                          <img src="src/images/call-icon.png" alt="call-icon">
+        
+                          <a href="tel: 012 345 6789">+91 012 345 6789</a>
+                        </div>
+        
+                        <p class="small-text">Pay us a visit for a cup of coffee. We’ll be more than happy to welcome you.</p>
+                      </div>
+                    </div>
+      
+                    <div class="col-2 footer-contact__form">
+                      <h6>Get in touch</h6>
+                      <p class="small-text">Our team will respond to you within 2 business days.</p>
+      
+                      <form>
+                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="email" class="form-control" placeholder="Business Email ID">
+                        <input type="text" class="form-control" placeholder="Company Name">
+                        <textarea class="form-control" placeholder="Message"></textarea>
+      
+                        <button type="submit" class="btn btn-blue">Submit</button>
+                      </form>
+                    </div>
+      
+      
+                  </div>
+                </div>
+              </div>
+      
+              <div class="marquee-container">
+                <div class="footer-textanimated">
+                  AI powered digital solutions.
+                </div>
+              </div>
+          </div>
+  
+            <div class="container">
+              <div class="footer-main">
+                <div class="d-flex justify-content-between">
+                    <div class="col-1">
+                      <a href="#">
+                        <img src="src/images/white-logo.png" alt="white-logo">
+                      </a>
                     </div>
   
-                    <button type="submit" class="btn btn-blue">Submit</button>
-                  </form>
-                </div>
+                    <div class="col-2">
+                      <div class="footer-links d-flex">
+                        <div class="footer-links__item">
+                          <p>Technologies</p>
   
-
-                <script>
-                    const dropArea = document.getElementById('drop-area');
-                    const fileInput = document.getElementById('file-input');
-                    const fileBtn = document.getElementById('file-btn');
-                    const fileNameDisplay = document.getElementById('file-name');
-                
-                    fileBtn.addEventListener('click', () => fileInput.click());
-                
-                    ['dragenter', 'dragover'].forEach(event => {
-                      dropArea.addEventListener(event, e => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        dropArea.classList.add('dragover');
-                      });
-                    });
-                
-                    ['dragleave', 'drop'].forEach(event => {
-                      dropArea.addEventListener(event, e => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        dropArea.classList.remove('dragover');
-                      });
-                    });
-                
-                    dropArea.addEventListener('drop', e => {
-                      const files = e.dataTransfer.files;
-                      if (files.length) {
-                        fileInput.files = files;
-                        updateFileNameDisplay(files[0]);
-                      }
-                    });
-                
-                    fileInput.addEventListener('change', () => {
-                      updateFileNameDisplay(fileInput.files[0]);
-                    });
-                
-                    function updateFileNameDisplay(file) {
-                      if (file) {
-                        fileNameDisplay.textContent = `Selected: ${file.name}`;
-                      } else {
-                        fileNameDisplay.textContent = '';
-                      }
-                    }
-                
-                    document.getElementById('upload-form').addEventListener('submit', function (e) {
-                      e.preventDefault();
-                      if (fileInput.files.length === 0) {
-                        alert('Please select a file first.');
-                        return;
-                      }
-                
-                      alert('File ready to upload: ' + fileInput.files[0].name);
-                      // Add real upload logic here (e.g., AJAX or formData)
-                    });
-                  </script>
+                          <a href="#" class="animated-link">Sitecore</a>
+                          <a href="#" class="animated-link">Adobe Experience Manager</a>
+                          <a href="#" class="animated-link">Umbraco</a>
+                        </div>
   
-              </div>
-            </div>
-          </div>
+                        <div class="footer-links__item">
+                          <p>Services</p>
   
-          <div class="marquee-container">
-            <div class="footer-textanimated">
-              AI powered digital solutions.
-            </div>
-          </div>
-      </div>
-
-          <div class="container">
-            <div class="footer-main">
-              <div class="d-flex justify-content-between">
-                  <div class="col-1">
-                    <a href="#">
-                      <img src="src/images/white-logo.png" alt="white-logo">
+                          <a href="#" class="animated-link">Software Development</a>
+                          <a href="#" class="animated-link">AI Development</a>
+                          <a href="#" class="animated-link">AI Consulting</a>
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                    <div class="col-3">
+                      <div class="footer-social">
+                        <a href="#">
+                          <img src="src/images/fb-icon.png" alt="fb-icon">
+                        </a>
+  
+                        <a href="#">
+                          <img src="src/images/twitter-icon.png" alt="twitter-icon">
+                        </a>
+  
+                        <a href="#">
+                          <img src="src/images/linkdin-icon.png" alt="linkdin-icon">
+                        </a>
+  
+                        <a href="#">
+                          <img src="src/images/insta-icon.png" alt="insta-icon">
+                        </a>
+                      </div>
+                    </div>
+                </div> 
+  
+                <div class="footer-links__2 d-flex justify-content-between">
+                  <div class="links">
+                    <a href="#" class="animated-link">
+                      Privacy Policy
+                    </a>
+                    <a href="#" class="animated-link">
+                      Terms & Conditions
+                    </a>
+                    <a href="#" class="animated-link">
+                      Sitemap
+                    </a>
+                    <a href="about-us.html" class="animated-link">
+                      About Us
+                    </a>
+                    <a href="#" class="animated-link">
+                      Contact Us
+                    </a>
+                    <a href="#" class="animated-link">
+                      Blogs
+                    </a>
+                    <a href="#" class="animated-link">
+                      Brand Guidelines
                     </a>
                   </div>
-
-                  <div class="col-2">
-                    <div class="footer-links d-flex">
-                      <div class="footer-links__item">
-                        <p>Technologies</p>
-
-                        <a href="#" class="animated-link">Sitecore</a>
-                        <a href="#" class="animated-link">Adobe Experience Manager</a>
-                        <a href="#" class="animated-link">Umbraco</a>
-                      </div>
-
-                      <div class="footer-links__item">
-                        <p>Services</p>
-
-                        <a href="#" class="animated-link">Software Development</a>
-                        <a href="#" class="animated-link">AI Development</a>
-                        <a href="#" class="animated-link">AI Consulting</a>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="col-3">
-                    <div class="footer-social">
-                      <a href="#">
-                        <img src="src/images/fb-icon.png" alt="fb-icon">
-                      </a>
-
-                      <a href="#">
-                        <img src="src/images/twitter-icon.png" alt="twitter-icon">
-                      </a>
-
-                      <a href="#">
-                        <img src="src/images/linkdin-icon.png" alt="linkdin-icon">
-                      </a>
-
-                      <a href="#">
-                        <img src="src/images/insta-icon.png" alt="insta-icon">
-                      </a>
-                    </div>
-                  </div>
-              </div> 
-
-              <div class="footer-links__2 d-flex justify-content-between">
-                <div class="links">
-                  <a href="#" class="animated-link">
-                    Privacy Policy
-                  </a>
-                  <a href="#" class="animated-link">
-                    Terms & Conditions
-                  </a>
-                  <a href="#" class="animated-link">
-                    Sitemap
-                  </a>
-                  <a href="about-us.html" class="animated-link">
-                    About Us
-                  </a>
-                  <a href="#" class="animated-link">
-                    Contact Us
-                  </a>
-                  <a href="#" class="animated-link">
-                    Blogs
-                  </a>
-                  <a href="#" class="animated-link">
-                    Brand Guidelines
-                  </a>
+  
+                  <p>© Arroact - 2025 All Rights Reserved</p>
                 </div>
-
-                <p>© Arroact - 2025 All Rights Reserved</p>
               </div>
             </div>
-          </div>
-      </footer>
+        </footer>
     </div>
 
 
