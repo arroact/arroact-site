@@ -264,10 +264,12 @@ textarea::-ms-input-placeholder {
     padding: 15px 30px;
   }
 
-  &:hover, &:active{
+  &:hover, &:active, &:focus-visible{
     transform: scale(1.05);
-    color: $white;
-  background-color: $blue;
+    color: $white !important;
+    background-color: $blue !important;
+    outline: none;
+    border: 0;
   }
 }
 
