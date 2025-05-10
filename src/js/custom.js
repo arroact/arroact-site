@@ -88,16 +88,21 @@ if (animationLink && typingContainer) {
 // Add Bg 
 
 document.querySelectorAll("[data-bg]").forEach(element => {
-  const bgPath = element.getAttribute("data-bg");
+  const isMobile = window.innerWidth < 767;
+  const bgPath = isMobile 
+    ? element.getAttribute("data-bg-mobile") || element.getAttribute("data-bg") 
+    : element.getAttribute("data-bg");
 
   if (bgPath) {
     element.style.backgroundImage = `url('${bgPath}')`;
     element.style.backgroundSize = "cover";
     element.style.backgroundPosition = "center";
-    element.style.backgroundRepeat = "no-repeat"; 
+    element.style.backgroundRepeat = "no-repeat";
     element.removeAttribute("data-bg");
+    element.removeAttribute("data-bg-mobile");
   }
 });
+
 
 
 

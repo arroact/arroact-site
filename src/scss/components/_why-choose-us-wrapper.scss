@@ -1,6 +1,11 @@
 .why-choose-us-wrapper{
     padding: 20px 0 100px;
 
+    @media (max-width: 991px) {
+        padding: 0;
+        margin: 70px auto !important;
+    }
+
 
 
     .d-grid{
