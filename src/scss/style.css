@@ -3255,6 +3255,7 @@ footer .footer-main .footer-links__2 .links {
 @media (max-width: 991px) {
   .blog-category-wrappper .blogs-listing__items {
     gap: 15px;
+    margin: 50px auto 70px auto;
   }
 }
 @media (max-width: 767px) {
@@ -3423,7 +3424,7 @@ footer .footer-main .footer-links__2 .links {
 @media (max-width: 767px) {
   .blog-detail-content {
     padding: 0;
-    margin-top: -115px !important;
+    margin-top: -95px !important;
   }
 }
 .blog-detail-content__img {
@@ -4051,7 +4052,7 @@ footer .footer-main .footer-links__2 .links {
   .career-wrapper.top-gap {
     overflow-x: hidden;
     z-index: 3;
-    margin-top: -130px;
+    margin-top: -80px;
   }
 }
 .career-wrapper .career-content ul {
@@ -4296,6 +4297,7 @@ footer .footer-main .footer-links__2 .links {
 
 .gallery-wrapper {
   margin: 150px auto 20px auto;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .gallery-wrapper {

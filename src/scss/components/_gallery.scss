@@ -1,5 +1,6 @@
 .gallery-wrapper{
     margin: 150px auto 20px auto;
+    overflow: hidden;
 
     @media (max-width:767px) {
       margin: 100px auto 20px auto;
