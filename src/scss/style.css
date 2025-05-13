@@ -5140,6 +5140,11 @@ footer .footer-main .footer-links__2 .links {
     gap: 10px;
   }
 }
+@media (max-width: 767px) {
+  .services-content-wrapper .about-content .d-flex .services-content-wrapper-boxes .d-flex {
+    gap: 15px;
+  }
+}
 .services-content-wrapper .about-content .d-flex .services-content-wrapper-boxes .item {
   display: flex;
   flex-direction: column;
