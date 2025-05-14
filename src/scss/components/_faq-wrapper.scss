@@ -1,11 +1,15 @@
 .faq-wrapper{
-    margin: 100px auto;
+    margin: 150px auto;
     padding: 0 120px 0 50px;
     max-width: 1440px;
     position: relative;
 
     @media (max-width:1200px) {
         padding: 0 30px;
+    }
+
+    @media (max-width:1400px) {
+        margin: 100px auto;
     }
 
     @media (max-width:991px) {
