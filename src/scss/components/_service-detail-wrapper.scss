@@ -72,7 +72,6 @@
         gap: 30px;
 
         @media (max-width: 991px) {
-            margin: 70px auto;
             gap: 15px;
         }
 
@@ -162,7 +161,7 @@
         margin: 70px auto 100px auto;
 
         @media (max-width: 767px) {
-            margin: 30px auto 70px auto;
+            margin: 30px auto 100px auto;
         }
 
         .grid-2{
@@ -259,9 +258,6 @@
             margin: 100px auto;
         }
 
-        @media (max-width: 991px) {
-            margin: 70px auto;
-        }
 
         .why-looking__bgsvg{
             position: absolute;
@@ -302,10 +298,6 @@
     .box-items-2{
         margin: 100px auto;
         position: relative;
-
-        @media (max-width: 991px) {
-            margin: 70px auto;
-        }
 
         @media (max-width: 767px) {
             margin: 100px auto;
@@ -411,7 +403,6 @@
 
         @media (max-width: 991px) {
             min-height: 500px;
-            margin: 70px auto;
         }
 
         @media (max-width: 767px) {
@@ -453,7 +444,7 @@
         }
 
         @media (max-width: 991px) {
-            margin: 70px auto 10px auto;
+            margin: 100px auto 10px auto;
         }
 
         &__bgsvg{
@@ -767,10 +758,6 @@
             margin: 100px auto;
         }
 
-        @media (max-width: 991px) {
-            margin: 70px auto;
-        }
-
         @media (max-width: 767px) {
             margin: 100px auto;
         }
@@ -882,10 +869,6 @@
 
         @media (max-width: 1400px) {
             margin: 100px auto;
-        }
-
-        @media (max-width: 991px) {
-            margin: 70px auto;
         }
 
         @media (max-width: 767px) {
@@ -1002,7 +985,6 @@
         }
 
         @media (max-width: 991px) {
-            margin: 70px auto;
             max-width: 100%;
         }
 
@@ -1474,10 +1456,6 @@
             margin: 100px auto;
         }
 
-        @media (max-width:991px) {
-            margin: 70px auto;
-        }
-
         .d-flex{
             @media (max-width:767px) {
                 flex-direction: column;
@@ -1523,5 +1501,84 @@
             }
         }
     }   
+
+    .logo-listing-wrapper{
+        margin: 150px auto;
+
+        @media (max-width:1200px) {
+            margin: 100px auto;
+        }
+
+        .logo-list{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 50px;
+            gap: 20px;
+
+            @media (max-width:991px) {
+                gap: 15px;
+            }
+
+            @media (max-width:767px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media (max-width:575px) {
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 30px;
+            }
+
+            .logo{
+                text-align: center;
+                background-color: $black_9;
+                border-radius: 30px;
+                min-height: 230px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+
+                @media (max-width:1200px) {
+                    min-height: 200px;
+                }
+
+                @media (max-width:991px) {
+                    border-radius: 15px;
+                }
+
+                @media (max-width:575px) {
+                    min-height: 133px;
+                }
+
+
+                img{
+                    width: 100px;
+                    height: auto;
+
+                    @media (max-width:1200px) {
+                        width: 80px;
+                    }
+
+                    @media (max-width:575px) {
+                        width: 60px;
+                    }
+                }
+
+                h5{
+                    margin-top: 30px;
+                    margin-bottom: 0;
+                    font-weight: 300;
+
+                    @media (max-width:575px) {
+                        font-size: 18px;
+                        line-height: normal;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
