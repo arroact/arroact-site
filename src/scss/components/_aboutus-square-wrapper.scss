@@ -4,10 +4,6 @@
     z-index: 7;
     position: relative;
 
-    @media (max-width: 767px) {
-        margin: 70px auto;
-    }
-
     .d-grid{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
