@@ -1,5 +1,7 @@
 .blogs-listing-wrapper{
     margin: 150px auto 20px auto;
+    position: relative;
+    z-index: 4;
 
     @media (max-width:1400px) {
         margin: 100px auto 20px auto;

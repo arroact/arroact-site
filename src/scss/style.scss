@@ -28,6 +28,9 @@
 body{
     font-family: $font;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 main{
@@ -391,6 +394,10 @@ textarea::-ms-input-placeholder {
 .top-gap{
   margin-top: -220px;
   position: relative;
+
+  @media (max-width: 1200px) {
+    margin-top: -260px;
+  }
 
   @media (max-width: 991px) {
     margin-top: -190px;

@@ -221,14 +221,14 @@
                 background-color: $black_7;
 
                 @media (min-width: 768px) {
-                    height: 210px;
+                    min-height: 210px;
                 }
 
 
                 p{
                     margin-bottom: 0;
                     display: -webkit-box;
-                    -webkit-line-clamp: 2;
+                    -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                 }
