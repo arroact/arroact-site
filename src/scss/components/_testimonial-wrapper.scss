@@ -7,6 +7,11 @@
         margin: 100px auto !important;
     }
 
+    @media (max-width:767px) {
+        padding: 0;
+        margin: 50px auto !important;
+    }
+
     &__bgsvg{
         position: absolute;
         top: -58%;

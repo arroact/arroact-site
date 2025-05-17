@@ -9,12 +9,6 @@
         @media (max-width:991px) {
             padding-top: 150px;
         }
-
-        h3{
-            &:first-child{
-                padding-top: 0;
-            }
-        }
     }
 
     .container{
@@ -28,7 +22,7 @@
     }
 
     h3{
-        padding-top: 100px;
+        padding-top: 70px;
 
         @media (max-width:991px) {
             padding-top: 60px;
@@ -39,6 +33,12 @@
         }
     }
 
+    p{
+       &:not(:first-child){
+            margin-top: 20px;
+        } 
+    }
+
     p, li{
         font-size: 18px;
         font-weight: 300;
@@ -47,11 +47,7 @@
         font-family: $font;
 
         &:not(:first-child){
-            margin-top: 50px;
-
-            @media (max-width:767px) {
-                margin-top: 30px;
-            }
+            margin-top: 5px;
         }
 
         @media (max-width:767px) {
@@ -61,11 +57,7 @@
     }
 
     ul,ol{
-        margin-top: 50px;
+        margin-top: 30px;
         padding-left: 15px;
-
-        @media (max-width:767px) {
-            margin-top: 30px;
-        }
     }
 }
