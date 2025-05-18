@@ -82,9 +82,6 @@ if (animationLink && typingContainer) {
 }
 
 
-
-
-
 // Add Bg 
 
 document.querySelectorAll("[data-bg]").forEach(element => {
@@ -566,8 +563,53 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.addEventListener('scroll', handleScroll);
-  handleScroll();  // Trigger the check on load
+  handleScroll();  
 });
+
+
+// why choose use
+
+ document.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth > 1210) {
+      const target = document.querySelector('.why-choose-us-wrapper');
+      let isTriggered = false;
+
+      function onScroll() {
+        const rect = target.getBoundingClientRect();
+
+        if (!isTriggered && rect.top <= 0) {
+          isTriggered = true;
+          target.classList.add('first');
+
+          setTimeout(() => {
+            target.classList.remove('first');
+            target.classList.add('second');
+          }, 1000);
+
+          setTimeout(() => {
+            target.classList.remove('first');
+            target.classList.add('third');
+          }, 3000);
+
+          setTimeout(() => {
+            target.classList.remove('first');
+            target.classList.add('fourth');
+          }, 5000);
+
+          window.removeEventListener('scroll', onScroll);
+        }
+      }
+
+      window.addEventListener('scroll', onScroll);
+    }
+  });
+
+
+
+
+
+
+
 
 
 
