@@ -3887,7 +3887,10 @@ footer .footer-main .footer-links__2 .links {
 .blog-detail-content__img {
   width: 100%;
 }
-.blog-detail-content h3, .blog-detail-content p, .blog-detail-content li {
+.blog-detail-content table td {
+  padding: 8px;
+}
+.blog-detail-content h3, .blog-detail-content p, .blog-detail-content li, .blog-detail-content h2, .blog-detail-content h1, .blog-detail-content h4, .blog-detail-content h5, .blog-detail-content h6 {
   color: #ffffff;
 }
 .blog-detail-content p, .blog-detail-content li {
@@ -3902,6 +3905,9 @@ footer .footer-main .footer-links__2 .links {
     line-height: 35px;
   }
 }
+.blog-detail-content li p {
+  margin-bottom: 0;
+}
 .blog-detail-content__img2 {
   max-width: 80%;
   margin: 0 auto;
@@ -3913,29 +3919,22 @@ footer .footer-main .footer-links__2 .links {
     max-width: 100%;
   }
 }
-.blog-detail-content h3 {
+.blog-detail-content h3, .blog-detail-content h2, .blog-detail-content h1, .blog-detail-content h4, .blog-detail-content h5, .blog-detail-content h6 {
   margin-bottom: 50px;
+  margin-top: 70px;
 }
 @media (max-width: 767px) {
-  .blog-detail-content h3 {
+  .blog-detail-content h3, .blog-detail-content h2, .blog-detail-content h1, .blog-detail-content h4, .blog-detail-content h5, .blog-detail-content h6 {
     margin-bottom: 40px;
   }
 }
-.blog-detail-content h3:not(:first-child) {
-  margin-top: 100px;
-}
 @media (max-width: 767px) {
-  .blog-detail-content h3:not(:first-child) {
-    margin-top: 50px;
+  .blog-detail-content h3, .blog-detail-content h2, .blog-detail-content h1, .blog-detail-content h4, .blog-detail-content h5, .blog-detail-content h6 {
+    margin-top: 30px;
   }
 }
 .blog-detail-content p:not(:first-child), .blog-detail-content li:not(:first-child) {
-  margin-top: 50px;
-}
-@media (max-width: 767px) {
-  .blog-detail-content p:not(:first-child), .blog-detail-content li:not(:first-child) {
-    margin-top: 40px;
-  }
+  margin-top: 10px;
 }
 
 .contactus-form {
@@ -7332,6 +7331,11 @@ img {
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.common-link {
+  color: #0033FF;
+  text-decoration: none;
 }
 
 .container {
