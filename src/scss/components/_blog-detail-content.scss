@@ -11,7 +11,13 @@
         width: 100%;
     }
 
-    h3,p,li{
+    table{
+        td{
+            padding: 8px;
+        }
+    }
+
+    h3,p,li, h2, h1, h4, h5, h6{
         color: $white;
     }
 
@@ -27,6 +33,12 @@
         }
     }
 
+    li{
+        p{
+            margin-bottom: 0;
+        }
+    }
+
     &__img2{
         max-width: 80%;
         margin: 0 auto;
@@ -38,29 +50,22 @@
         }
     }
 
-    h3{
+    h3, h2, h1, h4, h5, h6{
         margin-bottom: 50px;
+        margin-top: 70px;
 
         @media (max-width: 767px) {
             margin-bottom: 40px;
         }
 
-        &:not(:first-child){
-            margin-top: 100px;
-
-            @media (max-width: 767px) {
-                margin-top: 50px;
-            }
+        @media (max-width: 767px) {
+            margin-top: 30px;
         }
     }
 
     p, li{
         &:not(:first-child){
-            margin-top: 50px;
-
-            @media (max-width: 767px) {
-                margin-top: 40px;
-            }
+            margin-top: 10px;
         }
     }
 }

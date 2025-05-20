@@ -278,6 +278,10 @@ header .navbar-nav .dropdown-menu li .dropdown-item {
     background-color: #0033FF;
   }
 }
+header .navbar-nav .dropdown-menu li:last-child .dropdown-item:hover img {
+  background-color: #ffffff;
+  border-radius: 100%;
+}
 header .navbar-expand-lg .navbar-collapse {
   justify-content: end;
 }
@@ -3883,7 +3887,10 @@ footer .footer-main .footer-links__2 .links {
 .blog-detail-content__img {
   width: 100%;
 }
-.blog-detail-content h3, .blog-detail-content p, .blog-detail-content li {
+.blog-detail-content table td {
+  padding: 8px;
+}
+.blog-detail-content h3, .blog-detail-content p, .blog-detail-content li, .blog-detail-content h2, .blog-detail-content h1, .blog-detail-content h4, .blog-detail-content h5, .blog-detail-content h6 {
   color: #ffffff;
 }
 .blog-detail-content p, .blog-detail-content li {
@@ -3898,6 +3905,9 @@ footer .footer-main .footer-links__2 .links {
     line-height: 35px;
   }
 }
+.blog-detail-content li p {
+  margin-bottom: 0;
+}
 .blog-detail-content__img2 {
   max-width: 80%;
   margin: 0 auto;
@@ -3909,29 +3919,22 @@ footer .footer-main .footer-links__2 .links {
     max-width: 100%;
   }
 }
-.blog-detail-content h3 {
+.blog-detail-content h3, .blog-detail-content h2, .blog-detail-content h1, .blog-detail-content h4, .blog-detail-content h5, .blog-detail-content h6 {
   margin-bottom: 50px;
+  margin-top: 70px;
 }
 @media (max-width: 767px) {
-  .blog-detail-content h3 {
+  .blog-detail-content h3, .blog-detail-content h2, .blog-detail-content h1, .blog-detail-content h4, .blog-detail-content h5, .blog-detail-content h6 {
     margin-bottom: 40px;
   }
 }
-.blog-detail-content h3:not(:first-child) {
-  margin-top: 100px;
-}
 @media (max-width: 767px) {
-  .blog-detail-content h3:not(:first-child) {
-    margin-top: 50px;
+  .blog-detail-content h3, .blog-detail-content h2, .blog-detail-content h1, .blog-detail-content h4, .blog-detail-content h5, .blog-detail-content h6 {
+    margin-top: 30px;
   }
 }
 .blog-detail-content p:not(:first-child), .blog-detail-content li:not(:first-child) {
-  margin-top: 50px;
-}
-@media (max-width: 767px) {
-  .blog-detail-content p:not(:first-child), .blog-detail-content li:not(:first-child) {
-    margin-top: 40px;
-  }
+  margin-top: 10px;
 }
 
 .contactus-form {
@@ -6276,6 +6279,8 @@ footer .footer-main .footer-links__2 .links {
 .services-content-wrapper .development-process-wrapper__steps {
   margin-top: 70px;
   position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media (max-width: 991px) {
   .services-content-wrapper .development-process-wrapper__steps {
@@ -6311,7 +6316,7 @@ footer .footer-main .footer-links__2 .links {
 @media (max-width: 1300px) {
   .services-content-wrapper .development-process-wrapper__steps .step {
     width: 240px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 1200px) {
@@ -6337,7 +6342,7 @@ footer .footer-main .footer-links__2 .links {
 .services-content-wrapper .development-process-wrapper__steps .step:hover {
   background-color: #0033FF;
 }
-.services-content-wrapper .development-process-wrapper__steps .step:nth-child(6):after {
+.services-content-wrapper .development-process-wrapper__steps .step:nth-last-child(2):after {
   content: "";
   position: absolute;
   top: 0;
@@ -6349,17 +6354,17 @@ footer .footer-main .footer-links__2 .links {
   z-index: -1;
 }
 @media (max-width: 1300px) {
-  .services-content-wrapper .development-process-wrapper__steps .step:nth-child(6):after {
-    right: 90px;
+  .services-content-wrapper .development-process-wrapper__steps .step:nth-last-child(2):after {
+    right: 120px;
   }
 }
 @media (max-width: 1200px) {
-  .services-content-wrapper .development-process-wrapper__steps .step:nth-child(6):after {
-    right: 85px;
+  .services-content-wrapper .development-process-wrapper__steps .step:nth-last-child(2):after {
+    right: 100px;
   }
 }
 @media (max-width: 991px) {
-  .services-content-wrapper .development-process-wrapper__steps .step:nth-child(6):after {
+  .services-content-wrapper .development-process-wrapper__steps .step:nth-last-child(2):after {
     display: none;
   }
 }
@@ -6376,12 +6381,12 @@ footer .footer-main .footer-links__2 .links {
 }
 @media (max-width: 1300px) {
   .services-content-wrapper .development-process-wrapper__steps .step:last-child:after {
-    right: -30px;
+    right: 0;
   }
 }
 @media (max-width: 1200px) {
   .services-content-wrapper .development-process-wrapper__steps .step:last-child:after {
-    right: -15px;
+    right: 0;
   }
 }
 @media (max-width: 991px) {
@@ -7326,6 +7331,11 @@ img {
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.common-link {
+  color: #0033FF;
+  text-decoration: none;
 }
 
 .container {

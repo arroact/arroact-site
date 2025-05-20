@@ -228,6 +228,18 @@ header{
                     }
                     
                 }
+
+                &:last-child{
+                        .dropdown-item{
+                            &:hover{
+
+                            img{
+                                background-color: $white;
+                                border-radius: 100%;
+                            }
+                        }
+                    }
+                }
             }
 
         }

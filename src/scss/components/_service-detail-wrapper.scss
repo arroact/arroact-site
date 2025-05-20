@@ -1375,6 +1375,7 @@
         &__steps{
             margin-top: 70px;
             position: relative;
+            width: fit-content;
 
             @media (max-width: 991px) {
                 margin-left: 150px;
@@ -1406,7 +1407,7 @@
 
                 @media (max-width:1300px) {
                     width: 240px;
-                    font-size: 20px;
+                    font-size: 18px;
                 }
 
                 @media (max-width:1200px) {
@@ -1433,7 +1434,7 @@
                     background-color: $blue;
                 }
 
-                &:nth-child(6){
+                &:nth-last-child(2){
                     &:after {
                         content: '';
                         position: absolute;
@@ -1452,11 +1453,11 @@
                         z-index: -1;
 
                         @media (max-width:1300px) {
-                            right: 90px;
+                            right: 120px;
                         }
 
                         @media (max-width:1200px) {
-                            right: 85px;
+                            right: 100px;
                         }
 
                         @media (max-width: 991px) {
@@ -1484,11 +1485,11 @@
                         z-index:-1;
 
                         @media (max-width:1300px) {
-                            right: -30px;
+                            right: 0;
                         }
 
                         @media (max-width:1200px) {
-                            right: -15px;
+                            right: 0;
                         }
 
                         @media (max-width: 991px) {
