@@ -91,11 +91,12 @@
         .item{
             background-color: $white;
             border-radius: 30px;
-            padding: 35px;
+            padding: 35px 35px 130px;
             height: 100%;
+            position: relative;
 
             @media (max-width: 991px) {
-                padding: 20px;
+                padding: 20px 20px 85px;
                 border-radius: 20px;
             }
 
@@ -132,10 +133,17 @@
             }
 
             .btn{
-                margin-top: 30px;
+                bottom: 35px;
+                position: absolute;
+                left: 35px;
+
+                @media (max-width: 991px) {
+                   left: 20px;
+                   bottom: 20px;
+                }
 
                 @media (max-width: 767px) {
-                    margin-top: 20px;
+                    bottom: 20px;
                 }
             }
 
@@ -642,6 +650,37 @@
                 }
             }
         }
+
+        &.version-3{
+            h3, p{
+                    max-width: 40%;
+
+                @media (max-width: 1200px) {
+                        max-width: 100%;
+                } 
+            }
+
+            .d-grid{
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+
+                @media (max-width: 767px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (max-width: 600px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .item{
+                    border: 1px solid #ffffff1c;
+
+                    h3, p{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
     }
 
     .cta-wrapper{
@@ -1128,7 +1167,7 @@
                 .points-list{
                     display: grid;
                         grid-template-columns: repeat(2, 1fr);
-                        gap: 40px 100px;
+                        gap: 40px;
                         margin-top: 60px;
                         grid-auto-flow: dense; 
 
@@ -1147,12 +1186,8 @@
                             margin-bottom: 0;
                             position: relative;
                             padding-left: 40px;
-                            font-size: 22px;
+                            font-size: 18px;
                             line-height: 25px;
-
-                            @media (max-width:991px) {
-                                font-size: 18px;
-                            }
 
                             @media (max-width:767px) {
                                 font-size: 22px;
@@ -1775,6 +1810,7 @@
     .methodology-wrapper{
         margin: 200px auto;
         padding: 35px 0;
+        border-radius: 30px;
 
         @media (max-width:1400px) {
             margin: 150px auto;
@@ -1782,6 +1818,10 @@
 
         @media (max-width:1200px) {
             margin: 100px auto;
+        }
+
+        @media (max-width:991px) {
+            border-radius: 20px;
         }
 
         .d-flex{
@@ -1878,6 +1918,21 @@
 
                 @media (max-width:575px) {
                     min-height: 133px;
+                }
+
+                div{
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media (max-width:1200px) {
+                        height: 80px;
+                    }
+
+                    @media (max-width:575px) {
+                        height: 60px;
+                    }
                 }
 
 

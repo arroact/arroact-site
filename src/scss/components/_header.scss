@@ -155,7 +155,7 @@ header{
 
                 .dropdown-item{
                     img{
-                        filter: brightness(0);
+                        filter: brightness(12);
                         opacity: 0.5;
                         transition: all .3s;
                         margin-right: 15px;
@@ -228,18 +228,7 @@ header{
                     }
                     
                 }
-
-                &:last-child{
-                        .dropdown-item{
-                            &:hover{
-
-                            img{
-                                background-color: $white;
-                                border-radius: 100%;
-                            }
-                        }
-                    }
-                }
+            
             }
 
         }
