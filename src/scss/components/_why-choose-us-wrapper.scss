@@ -2,7 +2,7 @@
     padding: 20px 0 100px;
     background-color: $black;
     overflow: hidden;
-    min-height: 800px;
+    min-height: 700px;
 
     @media (max-width: 1210px) {
         min-height: auto;
@@ -277,7 +277,7 @@
     .step-2, .step-3{
         top: 0;
         position: absolute;
-        height: 800px;
+        padding: 50px 0;
         width: 100%;
         left: 0;
         right: 0;
@@ -396,6 +396,7 @@
                     transition: all 0.8s ease;
                     opacity: 1;
                     position: absolute;
+                    bottom: 0;
 
                     @media (max-width:1209px) {
                         position: relative;
@@ -410,26 +411,26 @@
         }
 
         .arrow-images{
-                transform: translateY(-320px) translatex(260px) !important;
+                transform: translateY(-370px) translatex(260px) !important;
                 z-index: 8;
                 max-width: 320px !important;
 
                 @media (max-width: 1300px){
-                    transform: translateY(-320px) translatex(266px) !important;
+                    transform: translateY(-370px) translatex(266px) !important;
                 }
 
                 @media (max-width: 1298px){
-                    transform: translateY(-320px) translatex(253px) !important;
+                    transform: translateY(-370px) translatex(253px) !important;
                 }
 
 
                 @media (max-width: 1260px){
-                    transform: translateY(-320px) translatex(265px) !important;
+                    transform: translateY(-370px) translatex(265px) !important;
                 }
 
 
                 @media (max-width: 1230px){
-                    transform: translateY(-320px) translatex(265px) !important;
+                    transform: translateY(-370px) translatex(265px) !important;
                 }
 
 
