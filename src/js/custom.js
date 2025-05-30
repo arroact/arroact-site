@@ -604,6 +604,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // career process animation
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const careerProcess = document.querySelector('.career-process');
+    const steps = careerProcess.querySelectorAll('.step');
+    let triggered = false;
+
+    function is50PercentFromTop(el) {
+        const rect = el.getBoundingClientRect();
+        const triggerPoint = window.innerHeight * 0.5;
+        return rect.top <= triggerPoint;
+    }
+
+    function addStepClasses() {
+        steps.forEach((step, index) => {
+            setTimeout(() => {
+                step.classList.add(`step-${index + 1}`);
+            }, index * 3000);
+        });
+    }
+
+    function onScroll() {
+        if (!triggered && is50PercentFromTop(careerProcess)) {
+            triggered = true;
+            addStepClasses();
+            window.removeEventListener('scroll', onScroll); 
+        }
+    }
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+});
+
+
 
 
 

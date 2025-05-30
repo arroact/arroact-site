@@ -37,6 +37,8 @@ body{
 main{
   position: relative;
   z-index: 2;
+  overflow-x: hidden;
+  overflow-y: clip;
 }
 
 

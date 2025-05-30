@@ -216,14 +216,8 @@ header .navbar-nav .dropdown-menu .dropdown-icon {
     max-width: 400px;
   }
   header .navbar-nav .dropdown-menu .dropdown-item img {
-    filter: brightness(12);
-    opacity: 0.5;
     transition: all 0.3s;
     margin-right: 15px;
-  }
-  header .navbar-nav .dropdown-menu .dropdown-item:hover img {
-    filter: none;
-    opacity: 1;
   }
 }
 @media (max-width: 991px) {
@@ -262,6 +256,8 @@ header .navbar-nav .dropdown-menu li .dropdown-item {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
 }
 @media (max-width: 1300px) {
   header .navbar-nav .dropdown-menu li .dropdown-item {
@@ -277,6 +273,27 @@ header .navbar-nav .dropdown-menu li .dropdown-item {
   header .navbar-nav .dropdown-menu li .dropdown-item:hover {
     background-color: #0033FF;
   }
+}
+header .navbar-nav .dropdown-menu li .dropdown-item .dark-logo {
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  header .navbar-nav .dropdown-menu li .dropdown-item .dark-logo {
+    opacity: 1;
+  }
+}
+@media (max-width: 991px) {
+  header .navbar-nav .dropdown-menu li .dropdown-item .light-logo {
+    opacity: 0;
+  }
+}
+header .navbar-nav .dropdown-menu li .dropdown-item:hover .light-logo {
+  opacity: 0;
+}
+header .navbar-nav .dropdown-menu li .dropdown-item:hover .dark-logo {
+  opacity: 1;
 }
 header .navbar-expand-lg .navbar-collapse {
   justify-content: end;
@@ -4616,10 +4633,49 @@ footer .footer-main .footer-links__2 .links {
   gap: 200px 500px;
   max-width: 1070px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.career-wrapper .career-process .d-grid .step {
+  background-color: #101010;
+  z-index: 6;
+  position: relative;
 }
 @media (max-width: 767px) {
   .career-wrapper .career-process .d-grid .step:not(:first-child) {
     margin-top: 50px;
+  }
+}
+.career-wrapper .career-process .d-grid .step .animated-arrow {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .career-wrapper .career-process .d-grid .step .animated-arrow {
+    display: block;
+  }
+  .career-wrapper .career-process .d-grid .step:nth-child(2) .animated-arrow {
+    transform: rotate(150deg) translateX(115px);
+    top: -15px;
+  }
+  .career-wrapper .career-process .d-grid .step:last-child .animated-arrow {
+    display: none;
+  }
+  .career-wrapper .career-process .d-grid .step .animated-arrow {
+    position: absolute;
+    top: 25px;
+    margin: 0;
+    z-index: -1;
+    width: 0px;
+  }
+  .career-wrapper .career-process .d-grid .step.step-1 .animated-arrow, .career-wrapper .career-process .d-grid .step.step-3 .animated-arrow {
+    transform: translateX(500%);
+    transition: all 2s;
+    width: 170px;
+  }
+  .career-wrapper .career-process .d-grid .step.step-2 .animated-arrow {
+    transform: rotate(150deg) translateX(600%);
+    transition: all 2s;
+    width: 170px;
   }
 }
 @media (max-width: 1300px) {
@@ -4765,7 +4821,6 @@ footer .footer-main .footer-links__2 .links {
 
 .gallery-wrapper {
   margin: 150px auto 20px auto;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .gallery-wrapper {
@@ -4812,7 +4867,12 @@ footer .footer-main .footer-links__2 .links {
   will-change: transform;
 }
 .gallery-wrapper .image-slider-wrapper .image-slider.animate {
-  animation: scrollX 20s linear infinite alternate;
+  animation: scrollX 30s linear infinite alternate;
+}
+@media (max-width: 767px) {
+  .gallery-wrapper .image-slider-wrapper .image-slider.animate {
+    animation: scrollX 80s linear infinite alternate;
+  }
 }
 .gallery-wrapper .image-slider-wrapper .image-slider img {
   border-radius: 10px;
@@ -7600,6 +7660,8 @@ body {
 main {
   position: relative;
   z-index: 2;
+  overflow-x: hidden;
+  overflow-y: clip;
 }
 
 img {
