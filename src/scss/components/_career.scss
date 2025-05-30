@@ -115,11 +115,65 @@
             gap: 200px 500px;
             max-width: 1070px;
             margin: 0 auto;
+            position: relative;
+            overflow: hidden;
 
             .step{
+                background-color: $black_1;
+                z-index: 6;
+                position: relative;
+
                 &:not(:first-child){
                     @media (max-width:767px) {
                         margin-top: 50px;
+                    }
+                }
+
+                .animated-arrow{
+                    display:none;
+                }
+
+
+                @media (min-width:1200px) {
+                    .animated-arrow{
+                        display:block;
+                    }
+
+                        &:nth-child(2){
+                        .animated-arrow{
+                            transform: rotate(150deg) translateX(115px);
+                            top: -15px;
+                        }
+                    }
+
+                    &:last-child{
+                    .animated-arrow{
+                        display: none;
+                        } 
+                    }
+
+                    .animated-arrow{
+                        position: absolute;
+                        top: 25px;
+                        margin: 0;
+                        z-index: -1;
+                        width: 0px;
+                    }
+
+                    &.step-1, &.step-3{
+                        .animated-arrow{
+                            transform: translateX(500%);
+                            transition: all 2s;
+                            width: 170px;
+                        }
+                    }
+
+                    &.step-2{
+                        .animated-arrow{
+                            transform: rotate(150deg) translateX(600%);
+                            transition: all 2s;
+                            width: 170px;
+                        }
                     }
                 }
             }

@@ -1,6 +1,5 @@
 .gallery-wrapper{
     margin: 150px auto 20px auto;
-    overflow: hidden;
 
     @media (max-width:767px) {
       margin: 100px auto 20px auto;
@@ -47,7 +46,11 @@
           will-change: transform;
   
           &.animate{
-              animation: scrollX 20s linear infinite alternate;
+              animation: scrollX 30s linear infinite alternate;
+
+              @media (max-width: 767px) {
+                animation: scrollX 80s linear infinite alternate;
+              }
           }
 
           img{

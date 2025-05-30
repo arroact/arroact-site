@@ -131,7 +131,6 @@ header{
             @media (max-width: 991px) {
                 padding: 30px 15px;
             }
-    
 
 
             .dropdown-icon{
@@ -155,17 +154,8 @@ header{
 
                 .dropdown-item{
                     img{
-                        filter: brightness(12);
-                        opacity: 0.5;
                         transition: all .3s;
                         margin-right: 15px;
-                    }
-
-                    &:hover{
-                        img{
-                            filter: none;
-                            opacity: 1;
-                        }
                     }
                 }
             }
@@ -209,6 +199,8 @@ header{
                     -webkit-line-clamp: 1; 
                     -webkit-box-orient: vertical;
                     overflow: hidden;
+                    position: relative;
+                    transition: all .3s;
 
                     @media (max-width: 1300px) {
                         font-size: 17px;
@@ -224,6 +216,33 @@ header{
                     @media (min-width: 992px) {
                         &:hover{
                             background-color: $blue;
+                        }
+                    }
+
+                    .dark-logo{
+                        position: absolute;
+                        left: 10px;
+                        opacity: 0;
+
+                        @media (max-width: 991px) {
+                            opacity: 1;
+                        }
+                    }
+
+                    .light-logo{
+                        @media (max-width: 991px) {
+                            opacity: 0;
+                        }
+                    }
+
+                    &:hover{
+
+                        .light-logo{
+                            opacity: 0;
+                        }
+
+                        .dark-logo{
+                            opacity: 1;
                         }
                     }
                     
