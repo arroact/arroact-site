@@ -7750,6 +7750,44 @@ footer .footer-main .footer-links__2 .links {
   margin: 40px auto 0;
 }
 
+.sitemap-links h3 {
+  margin-bottom: 40px;
+  padding-top: 0;
+}
+.sitemap-links a {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Nohemi";
+  color: #ffffff;
+  display: block;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .sitemap-links a {
+    font-size: 18px;
+  }
+}
+.sitemap-links ul {
+  margin-top: 0px;
+  list-style-type: none;
+  padding: 0;
+}
+.sitemap-links ul a {
+  margin-bottom: 10px;
+}
+.sitemap-links ul ul {
+  margin-bottom: 30px;
+  padding-left: 40px;
+  list-style-type: disc;
+}
+.sitemap-links ul ul li:last-child {
+  margin-bottom: 0;
+}
+.sitemap-links ul ul li a {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 body {
   font-family: "Nohemi";
   overflow-x: hidden;
