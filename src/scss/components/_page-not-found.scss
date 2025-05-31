@@ -5,10 +5,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 40px;
 
     @media (max-width:991px) {
         padding: 150px 20px;
         text-align: center;
+        border-radius: 10px;
     }
 
     @media (max-width:600px) {

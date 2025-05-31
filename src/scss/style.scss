@@ -23,6 +23,7 @@
 @import "components/content-wrapper";
 @import "components/service-detail-wrapper";
 @import "components/page-not-found";
+@import "components/thank-you";
 
 
 
@@ -410,4 +411,13 @@ textarea::-ms-input-placeholder {
   @media (max-width: 991px) {
     margin-top: -190px;
   }
+}
+
+.bg-gradient{
+  background-color: $blue;
+  padding: 10px;
+
+  @media (max-width:991px) {
+      padding: 5px;
+    }
 }

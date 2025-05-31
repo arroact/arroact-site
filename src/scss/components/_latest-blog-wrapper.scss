@@ -59,7 +59,10 @@
             font-family: $font;
             letter-spacing: 0.03em;
             align-items: center;
+
+            div{
             opacity: 0.6;
+            }
 
             .tag{
                 background-color: $blue;
@@ -69,6 +72,7 @@
                 font-family: $font;
                 text-transform: uppercase;
                 letter-spacing: 0.03em;
+                opacity: 1;
             }
 
             span:first-child{
