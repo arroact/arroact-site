@@ -69,3 +69,45 @@
         }
     }
 }
+
+.author-detail{
+    margin-top: 60px;
+
+    .title{
+        font-size: 20px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: $white;
+        font-family: $font;
+        font-weight: 400;
+        margin-bottom: 10px;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+
+    .d-flex{
+        background-color: $blue;
+        border-radius: 15px;
+        padding: 15px 20px;
+        width: fit-content;
+        gap: 18px;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        h5{
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .designation{
+            color: $white;
+            font-size: 15px;
+            font-weight: 300;
+            font-family: $font;
+        }
+    }
+}
