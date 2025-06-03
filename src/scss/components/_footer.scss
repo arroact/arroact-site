@@ -292,8 +292,9 @@ footer{
                 }
 
                 input[type="file"] {
-                    display: none;
-                  }
+                    cursor: pointer;
+                    padding: 16px 20px;
+                }
               
                   #file-name {
                     color: $white;

@@ -286,6 +286,10 @@
             position: relative;
             height: auto;
         }
+
+        @media (max-width: 767px){
+            padding: 0;
+        }
     }
 
     @media (max-width: 1210px){

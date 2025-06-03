@@ -379,8 +379,8 @@ textarea::-ms-input-placeholder {
   
 .scroll-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 100px;
+  right: 30px;
   background-color: transparent;
   color: $white;
   border: none;
@@ -397,6 +397,12 @@ textarea::-ms-input-placeholder {
 
   &:hover{
     background: $blue;
+  }
+
+  @media (max-width: 767px) {
+      height: 35px;
+      width: 35px;
+      font-size: 18px;
   }
 }
 
