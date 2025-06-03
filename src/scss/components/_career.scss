@@ -3,7 +3,7 @@
     margin: 0 auto;
 
     &.top-gap{
-        margin-top: -170px;
+        margin-top: -150px;
 
         @media (max-width: 991px) {
             margin-top: -110px;
@@ -170,7 +170,18 @@
 
                     &.step-2{
                         .animated-arrow{
-                            transform: rotate(150deg) translateX(600%);
+                            transform: rotate(149deg) translateX(635%);
+                            transition: all 2s;
+                            width: 170px;
+                        }
+                    }
+                }
+
+                
+                @media (max-width:1300px) {
+                    &.step-2{
+                        .animated-arrow{
+                            transform: rotate(152deg) translateX(635%);
                             transition: all 2s;
                             width: 170px;
                         }
