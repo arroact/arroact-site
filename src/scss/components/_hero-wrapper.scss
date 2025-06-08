@@ -308,7 +308,7 @@
 
             .d-grid{
                 grid-template-columns: repeat(2, 1fr);
-                gap: 70px;
+                gap: 40px;
                 align-items: center;
 
                 @media (min-width:1300px) {
@@ -489,7 +489,7 @@
 
             .title_2{
                 display: -webkit-box;
-                -webkit-line-clamp: 2;
+                -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 margin-bottom: 0;
@@ -613,7 +613,7 @@
         .hero-wrapper__content{
             &.content-width{
                 h1{
-                    max-width: 80%;
+                    max-width: 65%;
 
                     @media (max-width: 991px) {
                         max-width: 100%;
@@ -657,7 +657,7 @@
                     p{
                         margin: 30px auto 0 auto;
                         display: -webkit-box;
-                        -webkit-line-clamp: 3;
+                        -webkit-line-clamp: 4;
                         -webkit-box-orient: vertical;
                         overflow: hidden;
                     }
